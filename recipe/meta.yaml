@@ -1,5 +1,5 @@
 {% set name = "cpprate" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tmaklin/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 9734f5e9da27404ad12e5d426d0547d0b35e91b86b37f9f34367570fb5660af4
+  sha256: 2a05aa18382bbd1b4158a5d2d8c863bc6b910d4dbb8596fd3d8a4722fed86427
 
 build:
   number: 0
