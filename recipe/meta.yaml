@@ -10,12 +10,13 @@ source:
   sha256: 9734f5e9da27404ad12e5d426d0547d0b35e91b86b37f9f34367570fb5660af4
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake >=3.1
     - make
     - llvm-openmp        # [osx]
@@ -24,10 +25,10 @@ requirements:
     - libblas
     - eigen
     - bzip2
-    - xz
+    - liblzma-devel
   run:
     - bzip2
-    - xz
+    - liblzma-devel
 
 test:
   commands:
