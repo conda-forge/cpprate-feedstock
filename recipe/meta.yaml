@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/tmaklin/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 2a05aa18382bbd1b4158a5d2d8c863bc6b910d4dbb8596fd3d8a4722fed86427
+  patches:
+    - 0001-Fix-for-conda-build-on-OS-X.patch
 
 build:
   number: 0
